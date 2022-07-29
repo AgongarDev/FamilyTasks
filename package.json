@@ -26,10 +26,10 @@
     "backend"
   ],
   "lint-staged": {
-    "src/**/*.{js, jsx}": [
+    "src/**/*.{js,jsx}": [
       "npm run lint"
     ],
-    "src/**/*.{js, jsx, json, css, scss}": [
+    "src/**/*.{js,jsx,json,css,scss}": [
       "prettier --write",
       "git add"
     ]
