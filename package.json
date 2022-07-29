@@ -4,10 +4,9 @@
   "description": "My first portfolio made with React and several backend technologies",
   "main": "index.js",
   "scripts": {
-    "test": "-t",
     "start": "parcel src/index.html",
-    "lint": "eslint --fix src/**/*.{js, jsx}",
-    "format": "prettier --write \"*.{js, jsx, json, css}\""
+    "lint": "eslint --fix src/**/*.{js,jsx}",
+    "format": "prettier --write \"*.{js,jsx,json,css}\""
   },
   "prettier": {
     "trailingComma": "all",
@@ -26,11 +25,6 @@
     "frontend",
     "backend"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "src/**/*.{js, jsx}": [
       "npm run lint"
@@ -47,16 +41,21 @@
   },
   "homepage": "https://github.com/AgongarDev/portfolio#readme",
   "dependencies": {
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "devDependencies": {
     "eslint": "^8.20.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-react": "^7.30.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "parcel-bundler": "^1.3.1"
   }
 }
